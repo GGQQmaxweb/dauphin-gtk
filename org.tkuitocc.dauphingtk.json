@@ -1,0 +1,25 @@
+{
+  "app-id": "org.tkuitocc.dauphingtk",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "45",
+  "sdk": "org.gnome.Sdk",
+  "command": "dauphingtk",
+  "modules": [
+    {
+      "name": "dauphingtk",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -D dauphin-gtk.py /app/bin/dauphingtk"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "path": "dauphin-gtk.py"
+        }
+      ]
+    }
+  ],
+  "finish-args": [
+  "--share=network"
+  ]
+}
